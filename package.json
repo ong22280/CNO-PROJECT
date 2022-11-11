@@ -1,5 +1,5 @@
 {
-  "name": "cno-project",
+  "name": "vue101",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,15 +7,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "pinia": "^2.0.23",
     "vue": "^3.2.41",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.2",
     "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.19",
-    "tailwindcss": "^3.2.3",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.2",
     "vite": "^3.1.8"
   }
 }
