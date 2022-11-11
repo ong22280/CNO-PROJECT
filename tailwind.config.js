@@ -14,7 +14,9 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
-      }
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1)',
+      },
+      
     },
   },
   plugins: [],
