@@ -23,7 +23,7 @@ export default {
         /* center */
         transform: scale(0) ;
     }
-    10% {
+    1% {
         opacity: 0;
         transform: scale(0.1) ;
     }
