@@ -3,9 +3,6 @@
         <div class="fixed left-[-225px] top-[-50px]">
             <img src="../assets/images/rocket-use.png" alt="">
         </div>
-        <div class="fixed right-[50px] bottom-[30px] max-h-[300px]">
-            <img src="../assets/images/planet.png" alt="" class="h-[100px]">
-        </div>
         <div class="flex-col justify-center">
             <div class="text-center flex justify-center h-[15px]">
                 <h1 class="text-white text-[60px] w-[280px]">{ C N O }</h1>
@@ -90,7 +87,7 @@ export default {
                     team : "CNO",
                     year : "KU81",
                     birthday : "11-17-2002",
-                    studentID : "620610809",
+                    studentID : "6410406754",
                     facebook : "https://www.facebook.com/Tpatinya/",
                     github :"https://www.github.com/PatinyaCXLD/",
                     instagram: "https://www.instagram.com/cxld.pty/",
@@ -103,7 +100,7 @@ export default {
                     team : "CNO",
                     year : "KU81",
                     birthday : "09-21-2001",
-                    studentID : "620610801",
+                    studentID : "6410401183",
                     facebook : "https://www.facebook.com/profile.php?id=100008313884704",
                     github :"https://www.github.com/ong22280/",
                     instagram: "https://www.instagram.com/sittipongong/",
@@ -116,7 +113,7 @@ export default {
                     team : "CNO",
                     year : "KU81",
                     birthday : "12-27-2002",
-                    studentID : "620610811",
+                    studentID : "6410406771",
                     facebook : "https://www.facebook.com/punnatud.duengkae",
                     github :"https://www.github.com/Punnatud/",
                     instagram: "https://www.instagram.com/nokkokalderaan/",
