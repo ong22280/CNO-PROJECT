@@ -1,8 +1,6 @@
-# vue101
+# CNO-PROJECT
 
 This template should help get you started developing with Vue 3 in Vite.
-
-# CNO-PROJECT
 ![](readme_images/HomePresent-modified.png)
 
 ## Recommended IDE Setup
@@ -30,4 +28,3 @@ npm run dev
 ```sh
 npm run build
 ```
-# vue101
