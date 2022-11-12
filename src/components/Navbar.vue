@@ -57,12 +57,19 @@
                     </div>
                 </div>
                 <div class="animation start-home"></div>
+                
             </nav>
         </div>
     </div>
 </template>
 <script>
-
+export default {
+    data() {
+        return {
+            showMenu: false,
+        };
+    },
+};
 </script>
 
 <style>

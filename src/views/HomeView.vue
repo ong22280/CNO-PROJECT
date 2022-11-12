@@ -92,14 +92,14 @@ export default {
   0% {
     left: 0%;
   }
-  40% {
-    left: 40%;
+  25% {
+    left: 15%;
   }
   50% {
-    left: 50%;
+    left: 30%;
   }
-  60% {
-    left: 60%;
+  75% {
+    left: 15%;
   }
   100% {
     left: 0%;
