@@ -1,7 +1,10 @@
 <template>
     <div class=" min-h-screen h-cover w-cover bg-cover p-[50px] star">
-        <div class="fixed left-[-225px] top-[-50px]">
+        <div class="fixed left-[-225px] top-[-50px] star5">
             <img src="../assets/images/rocket-use.png" alt="">
+        </div>
+        <div class="fixed right-[50px] bottom-[30px] max-h-[300px] star5">
+            <img src="../assets/images/planet.png" alt="" class="h-[100px]">
         </div>
         <div class="flex-col justify-center">
             <div class="text-center flex justify-center h-[15px]">
@@ -153,3 +156,16 @@ export default {
 }
 </script>
 
+<style>
+@keyframes star5 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style>
