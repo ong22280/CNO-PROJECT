@@ -5,19 +5,22 @@
   <div
     class="text-yellow-500 text-center border-x-orange-600 border-y-black border-5 star2"
   >
-    <h1 class="p-5 text-5xl">PROGRAMMING PRO TIP</h1>
+    <h1 class="p-5 text-5xl ">PROGRAMMING PRO TIP</h1>
     <p class="pb-5 text-3xl">
       code javascript underwater,
       <br />
       so nobody could see you crying
     </p>
   </div>
-  <img
-    src="../assets/images/object1.gif"
-    alt=""
-    class="w-52"
-    style="animation: MyMove 5s infinite; position: relative;"
-  />
+  <div class="star2 flex-auto justify-center">
+
+    <img
+      src="../assets/images/object1.gif"
+      alt=""
+      class="w-52"
+      style="animation: MyMove 5s infinite; position: relative;"
+    />
+  </div>
 </template>
 
 <script>
@@ -50,59 +53,21 @@ export default {
   margin: auto;
 }
 
-.star2 {
-  animation: star2 8s;
-}
-
-@keyframes star2 {
-  0% {
-    opacity: 0;
-    /* center */
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.star3 {
-  animation: star3 8s;
-}
-
-@keyframes star3 {
-  0% {
-    opacity: 0;
-    /* center */
-  }
-
-  80% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes MyMove {
   0% {
-    left: 0%;
-  }
-  25% {
-    left: 15%;
-  }
-  50% {
     left: 30%;
   }
+  25% {
+    left: 35%;
+  }
+  50% {
+    left: 40%;
+  }
   75% {
-    left: 15%;
+    left: 35%;
   }
   100% {
-    left: 0%;
+    left: 30%;
   }
 }
 @keyframes bounce {

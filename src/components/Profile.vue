@@ -1,5 +1,5 @@
 <template>
-  <div class="star">
+  <div>
     <div
       class="text-center w-[240px] h-fit m-[50px] border border-yellow-500 rounded-md shadow-md p-3.5 scale-100 bg-yellow-200 overflow-hidden hover:scale-105 ease-in duration-100 hover:bg-yellow-100"
       :title="getName(name)"

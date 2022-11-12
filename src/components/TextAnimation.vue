@@ -13,28 +13,4 @@ export default {
 
 <style>
 
-.star {
-    animation: star 20s ;
-}
-
-@keyframes star {
-    0% {
-        opacity: 0;
-        /* center */
-        transform: scale(0) ;
-    }
-    1% {
-        opacity: 0;
-        transform: scale(0.1) ;
-    }
-    20% {
-        opacity: 1;
-        transform: scale(0.7) ;
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 </style>
