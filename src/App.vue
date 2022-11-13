@@ -4,14 +4,14 @@
     <img
       src="./assets/images/rocket-use.png"
       alt=""
-      class="hover:animate-wiggle"
+      class="animate-wiggle"
     />
   </div>
   <div class="fixed right-[50px] bottom-[30px] max-h-[300px] star5">
     <img
       src="./assets/images/planet.png"
       alt=""
-      class="h-[100px] hover:animate-wiggle"
+      class="h-[100px] animate-wiggle"
     />
   </div>
   <div>
@@ -120,4 +120,20 @@ export default {
     transform: scale(1);
   }
 }
+
+.zoom-in-out-infinite {
+  animation: zoom-in-out-infinite 2s infinite;
+}
+@keyframes zoom-in-out-infinite {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 </style>

@@ -41,7 +41,7 @@
                         <img class="
                             w-14
                             rounded-full 
-                            animate-[wiggle_1s_ease-in-out_infinite]" 
+                            animate-[wiggle_5s_ease-in-out_infinite]" 
                             src="../assets/images/ku.png" alt="image description">
                     </a>
                     <div @click="showMenu = !showMenu" class="flex md:hidden">
