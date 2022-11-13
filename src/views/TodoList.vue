@@ -18,11 +18,11 @@
         <div v-for="todo in todos" :key="todo.id" class="flex-col text-white m-2 bg-gray-700 rounded-lg justify-center max-w-xs border-gray-600 border-2">
             <div class=" p-10 font-semibold text-yellow-500 text-lg text-center max-w-xs">{{ todo.content }}</div>
             <div class="flex justify-center">
-                <button class="px-10 mb-2">
+                <button class="px-10 mb-2" @click="likeButton(todo.id)">
                 <font-awesome-icon icon="fa-solid fa-circle-up"  class="text-3xl text-green-500 hover:text-green-400"/>
                 <p>{{ todo.like }}</p>
             </button>
-            <button class="px-10 mb-2">
+            <button class="px-10 mb-2 " @click="dislikeButton(todo.id)">
                 <font-awesome-icon icon="fa-solid fa-circle-down" class="text-3xl text-red-500 hover:text-red-400"/>
                     <p>{{ todo.dislike }}</p>
             </button>
@@ -34,13 +34,15 @@
 
 <script setup>
     import { onMounted, ref } from '@vue/runtime-core'
-    import { addDoc, collection, onSnapshot} from "firebase/firestore";
+    import { addDoc, collection, onSnapshot,
+             updateDoc, doc, query, orderBy} from "firebase/firestore";
     import { db } from '@/firebase'
         const todos = ref([])
         //firebase ref
         const todoCollection = collection(db, 'todoList')
+        const todoCollectionSorted = query(todoCollection, orderBy('sum', 'desc'));
         onMounted(()=>{
-            onSnapshot(todoCollection, (querySnapshot)=>{
+            onSnapshot(todoCollectionSorted, (querySnapshot)=>{
                 const fbTodos =[]
                 querySnapshot.forEach((doc)=>{
                     const todo = {
@@ -48,7 +50,7 @@
                         content: doc.data().content,
                         like: doc.data().like,
                         dislike: doc.data().dislike,
-                        sum: doc.data().like + doc.data().dislike
+                        sum: doc.data().sum
                     }
                     fbTodos.push(todo)
                 })
@@ -61,8 +63,23 @@
                 content: newTodoContent.value,
                 like: 0,
                 dislike: 0,
+                sum: 0
             })
             newTodoContent.value=''
+        }
+        const likeButton = id =>{
+            const index = todos.value.findIndex(todo => todo.id === id)
+            updateDoc(doc(todoCollection, id),{
+                like: todos.value[index].like+=1,
+                sum: todos.value[index].sum+=1
+            })
+        }
+        const dislikeButton = id =>{
+            const index = todos.value.findIndex(todo => todo.id === id)
+            updateDoc(doc(todoCollection, id),{
+                dislike: todos.value[index].dislike+=1,
+                sum: todos.value[index].sum-=1
+            })
         }
 </script>
 
