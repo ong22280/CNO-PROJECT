@@ -120,7 +120,7 @@ export default {
           detail:
             "สวัสดีครับ ผมนายปฏิญญา สายจันทดี ชื่อเล่นต้นหนาวนะครับ ตอนนี้ศึกษาอยู่ที่มหาวิทยาลัยเกษตรศาสตร์ บางเขน คณะวิทยาการคอมพิวเตอร์ สาขาภาควิชาวิทยาการคอมพิวเตอร์ ปีที่ 2 ครับ",
           image:
-            "https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/306148111_1880034558867492_7239761071913403261_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=X2MKA-ZW1JcAX9v_Uu6&_nc_ht=scontent-sin6-4.xx&oh=00_AfAWqFIQ_bf49w75-KLuajS4IVz1ihVV7PHUk-tzih-vlQ&oe=63706736",
+            "https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/306148111_1880034558867492_7239761071913403261_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_XeFqM296J4AX8utin4&_nc_ht=scontent.fbkk5-4.fna&oh=00_AfAeICXwBymDgAushZ-y3tunHsjPAJs5a7MqDMSJpx640g&oe=637655F6",
         },
         {
           name: "Sittipong Hemloum",
@@ -211,5 +211,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
