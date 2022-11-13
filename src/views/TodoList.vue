@@ -27,10 +27,10 @@
         <div
           v-for="todo in todos"
           :key="todo.id"
-          class="flex-col text-white m-2 bg-gray-700 rounded-lg justify-center max-w-xs border-gray-600 border-2"
+          class="flex-col text-white m-2 bg-gray-700 hover:bg-gray-600 rounded-lg justify-center max-w-xs border-gray-600 border-2"
         >
           <div
-            class="p-10 font-semibold text-yellow-500 text-lg text-center max-w-xs"
+            class="p-10 font-semibold text-yellow-500 text-lg text-center max-w-xs "
           >
             {{ todo.content }}
           </div>
@@ -38,14 +38,14 @@
             <button class="px-10 mb-2" @click="likeButton(todo.id)">
               <font-awesome-icon
                 icon="fa-solid fa-circle-up"
-                class="text-3xl text-green-500 hover:text-green-400"
+                class="text-3xl text-green-500 hover:text-green-400 hover:scale-125"
               />
               <p>{{ todo.like }}</p>
             </button>
             <button class="px-10 mb-2" @click="dislikeButton(todo.id)">
               <font-awesome-icon
                 icon="fa-solid fa-circle-down"
-                class="text-3xl text-red-500 hover:text-red-400"
+                class="text-3xl text-red-500 hover:text-red-400 hover:scale-125"
               />
               <p>{{ todo.dislike }}</p>
             </button>

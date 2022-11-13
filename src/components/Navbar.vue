@@ -36,8 +36,7 @@
                     </ul>
                 </div>
                 <div class="flex items-center justify-start">
-
-                    <a href="https://www.ku.ac.th/th" class="px-4" target="_blank">
+                    <a href="https://www.ku.ac.th/th" target="_blank" class="px-4">
                         <img class="
                             w-14
                             rounded-full 
