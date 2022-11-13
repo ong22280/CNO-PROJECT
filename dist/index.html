@@ -8,8 +8,20 @@
     <script type="module" crossorigin src="/CNO-PROJECT/assets/index.0e08133d.js"></script>
     <link rel="stylesheet" href="/CNO-PROJECT/assets/index.c9789e76.css">
   </head>
-  <body>
+  <body class="scrollbar-hide">
     <div id="app"></div>
     
   </body>
 </html>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+</style>
