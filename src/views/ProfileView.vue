@@ -3,9 +3,9 @@
     <div class="text-center flex justify-center h-[15px] pt-5 star4">
       <h1 class="text-white text-[60px] w-[280px] hover:scale-110 hover:text-yellow-300">{ C N O }</h1>
     </div>
-    <div class="min-h-screen h-cover w-cover bg-cover p-[50px] star3">
-      <div class="flex-col justify-center">
-        <div class="p-[50px] flex flex-wrap justify-center mt-[5%]">
+    <div class="h-cover w-cover bg-cover p-[50px] star3">
+      <div class="flex-col justify-center mt-[-6%]">
+        <div class="p-[50px] flex flex-wrap justify-center mt-[10%]">
           <div
             :class="getMemberNumber()"
             v-for="member in members"
@@ -13,7 +13,7 @@
           >
             <button
               @click="
-                selected = showPopup(member.name);
+                showPopup(member.name);
                 this.name = member.name;
                 this.nickname = member.nickname;
                 this.detail = member.detail;
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div
-          v-if="selected"
+          v-if="selected" ref="detailBox"
           class="bg-gray-900 h-cover w-[30%] ml-[35%] pb-[12px] rounded-xl animate-popup font-code font-regular"
         >
           <div class="bg-gray-300 pt-[1.5%] pl-[1.5%] pb-[1%] rounded-t-xl">
@@ -171,15 +171,41 @@ export default {
     getMemberNumber() {
       return "basis-1/" + this.members.length + " flex justify-center h-fit";
     },
-    showPopup(name) {
-      console.log(this.name, name);
+    scrollToElement(refName) {
+      var element = this.$refs[refName];
+      var top = element.offsetTop;
+      
+      window.scrollTo(0,top)
+    },
+    showPopup(name){
       if (name != this.name) {
-        return true;
-      } else if (!this.selected) {
-        return true;
-      } else {
-        return false;
+        this.selected = true;
+        this.goToBottom();
+      }else if (!this.selected){
+        this.selected = true;
+        this.goToBottom();
+      }else{
+        this.goToTop();
+        setTimeout( ()=>{
+            this.selected = false;
+            },200
+        );
       }
+    },
+    goToBottom(){
+        setTimeout(()=>{
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth'
+            }),
+            10
+        })
+    },
+    goToTop(){
+        window.scrollTo({top:0,behavior:'smooth'});
+    },
+    getHeight(){
+        console.log(document.documentElement.scrollHeight)
     },
   },
 };
