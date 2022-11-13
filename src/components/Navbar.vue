@@ -31,7 +31,7 @@
 
                         </li>
                         <li class="text-2xl  font-bold text-black hover:animate-pulse ">
-                            FIREBASE
+                            <router-link to="/todo">TODO</router-link>
                         </li>
                     </ul>
                 </div>
