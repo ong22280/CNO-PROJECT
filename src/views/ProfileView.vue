@@ -149,7 +149,7 @@ export default {
           instagram: "https://www.instagram.com/nokkokalderaan/",
           detail: "This is just a test",
           image:
-            "https://scontent-sin6-3.xx.fbcdn.net/v/t1.15752-9/313894314_664603271857321_204835522882551428_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=g_nLz-GHp5IAX8DLPcP&tn=9Fdpok23RdUNBt3U&_nc_ht=scontent-sin6-3.xx&oh=03_AdSNfyVmHC1ynKkc06kPhEZvW_v4rCz1fBNMMR1jO5729g&oe=6393E073",
+            "https://scontent.xx.fbcdn.net/v/t1.15752-9/314996702_793191231783542_1834186024487866866_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHxhAupt6EMolQKsnD6EUNHRiieUlpupj9GKJ5SWm6mP6d6bkW_6d0-SOiW-AlNyALiszDs4y4p4d4lZPvc0NwS&_nc_ohc=bhquXO4u3f4AX-LhpD3&_nc_ht=scontent.fbkk5-5.fna&oh=03_AdTWYBKW5KETNPuMD0ayMY_7iyQPYO01PM-zelgU1yaBqA&oe=6397EB88&_nc_fr=fbkk5c05",
         },
       ],
       name: "Patinya Saichantadee",
