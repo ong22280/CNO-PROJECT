@@ -5,7 +5,7 @@
   <div
     class="text-yellow-500 text-center border-x-orange-600 border-y-black border-5 star2"
   >
-    <h1 class="p-5 text-5xl ">PROGRAMMING PRO TIP</h1>
+    <h1 class="p-5 text-5xl font-bold">PROGRAMMING PRO TIP</h1>
     <p class="pb-5 text-3xl">
       code javascript underwater,
       <br />

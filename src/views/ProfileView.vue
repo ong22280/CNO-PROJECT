@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-center flex justify-center h-[15px] pt-5 star4">
-      <h1 class="text-white text-[60px] w-[280px] hover:scale-110 hover:text-yellow-300">{ C N O }</h1>
+      <h1 class="text-white font-bold text-[60px] w-[280px] hover:scale-110 hover:text-yellow-300">{ C N O }</h1>
     </div>
     <div class="h-cover w-cover bg-cover p-[50px] star3">
       <div class="flex-col justify-center mt-[-6%]">
@@ -100,6 +100,7 @@
   </div>
 </template>
 <script>
+// import tailwind config
 import profileCard from "../components/Profile.vue";
 export default {
   data() {
